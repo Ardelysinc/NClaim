@@ -160,7 +160,7 @@ public class ClaimDataManager {
             String claimPath = "chunks_claimed." + x + "_" + z;
             claimsConfig.set(claimPath + ".created-at", formattedDate);
             Calendar calendar = Calendar.getInstance();
-            calendar.add(Calendar.DAY_OF_YEAR, 7);
+            calendar.add(Calendar.DAY_OF_YEAR, NCoreMain.inst().config.getInt("claim-end-day"));
             String expirationDate = dateFormat.format(calendar.getTime());
             claimsConfig.set(claimPath + ".expired-at", expirationDate);
 

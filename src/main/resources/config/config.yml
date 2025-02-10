@@ -9,8 +9,10 @@ blacklisted-worlds:
 
 # max-claim-count: Defines the maximum number of claims a player can own.
 # money-data: Determines the economy system: "PlayerData" or "Vault". (Important for the purchasing process.)
-# claim-buy-price: # The amount of money deducted from a player's account when purchasing a new claim.
-# claim-each-land-price: # The cost to expand an existing claim.
+# claim-buy-price: The amount of money deducted from a player's account when purchasing a new claim.
+# claim-each-land-price: The cost to expand an existing claim.
+# max-coop-limit: How many people can co-op your claim.
+# claim-end-day: The date when the claim will be deleted after purchase
 # date-format: Date and time format.
 # time-zone: Time zone.
 max-claim-count: 3
@@ -18,6 +20,7 @@ money-data: PlayerData
 claim-buy-price: 1500
 claim-each-land-price: 2000
 max-coop-limit: 3
+claim-end-day: 7
 date-format: dd-MM-yyyy HH:mm:ss
 time-zone: GMT+03:00
 
