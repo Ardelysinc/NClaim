@@ -1,0 +1,62 @@
+# Warning!
+# %0, %1, %2... are placeholders and they can be removed from the messages to your liking.
+
+messages:
+  # General
+  dont-have-permission: "%p {RED}Error: You don’t have permission to do that!"
+  cooldown: "%p {RED}Error: Please wait a moment before trying again."
+  enter-a-valid-data: "%p {RED}Error: Enter a valid data"
+  player-not-found: "%p {RED}Error: Player not found."
+  need-to-rejoin: "%p {RED}Error: Try join in to the server again."
+  insufficient-balance: "%p {RED}Error: Insufficient balance."
+  reached-max-claim-count: "%p {RED}Error: You reached the max claim count."
+  you-are-in-blacklisted-world: "%p {RED}Error: You can't do this because you're in a blacklisted world."
+  setup-your-config-file: "%p {RED}Error: Invalid value in config file please reinstall default config and try again."
+  # Claim
+  claim-insufficient-balance: "%p {RED}Error: You need to {DARKRED}%0{RED}${RED}/{DARKRED}%1{RED}$ balance for buy claim " # %0 is player balance, %1 is required balance in config
+  claim-successfully-bought: "%p {GREEN}Success: You successfully bought the claim."
+  claim-not-found: "%p {RED}Error: Claim not found."
+  claim-is-not-yours: "%p {RED}Error: This claim is not yours."
+  claim-expired: "%p {PURPLE}Reminder: {WHITE}Claim time expired and removed {GRAY}({RED}%0{WHITE}, {RED}%1{GRAY})" # %0 is chunk x, %1 is chunk z (center)
+  # Claim - Coop
+  cannot-add-yourself: "%p {RED}Error: You cannot add yourself."
+  coop-player-successfully-added: "%p {GREEN}Success: You have added to {DARKGREEN}%0{GREEN}'s to your claim." # %0 is coop player.
+  coop-player-successfully-kicked: "%p {GREEN}Success: {DARKGREEN}%0 {GREEN}has been removed from the list of co-op players." # %0 is coop player.
+  coop-player-already-not-in-coop: "%p {GREEN}Success: {DARKGREEN}%0 {GREEN}this player is already not on the co-op list." # %0 is coop player.
+  you-been-added-to-claim: "%p {GREEN}Success: You have been added to %0's claim." # %0 is name of the person who added it
+  coop-limit-reached: "%p {RED}Error: You can only have up to {DARKRED}%0 {RED}co-op players!" # %0 is max coop limit
+  # Claim - Expand
+  claim-expanded: "%p {GREEN}Success: New land added to your claim."
+  chunk-already-claimed: "%p {RED}Error: This chunk is already claimed!"
+  land-insufficient-balance: "%p {RED}Error: You need to {DARKRED}%0{RED}${RED}/{DARKRED}%1{RED}$ balance for expand your claim." # %0 is player balance, %1 is required balance in config
+  # Commands
+  wrong-usage: "%p {RED}Error: You need help? Use /nclaim <help/?> you can see all avaliable commands."
+  enter-a-valid-number: "%p {RED}Error: Please enter a valid number."
+  # Command - Reload
+  reload: "%p {GREEN}Success: Configuration files have been successfully reloaded."
+  # Command - Chunk info
+  chunk-info: "%p {PURPLE}Reminder: {WHITE}You are currently in chunk: X = {GRAY}%0 {WHITE}, Z = {GRAY}%1" # %0 is chunk x, %1 is chunk z
+  # Command - Add - Balance
+  balance-added-to-target: "%p {GREEN}Success: {DARKGREEN}%0$ {GREEN}added to your balance by admin. {GRAY}({GREEN}Total balance: {DARKGREEN}%1${GRAY})" # %0 is added price, %1 is target player total balance (message to target player)
+  balance-added-successfully: "%p {GREEN}Success: Added {DARKGREEN}%0$ {GREEN}to %1's balance." # %0 is increased balance, %1 is target player (message to admin)
+  balance-removed-to-target: "%p {GREEN}Success: {DARKGREEN}%0$ {GREEN}removed to your balance by admin. {GRAY}({GREEN}Total balance: {DARKGREEN}%1${GRAY})" # %0 is removed balance, %1 is target player total balance
+  balance-removed-successfully: "%p {GREEN}Success: {GREEN}Removed {DARKGREEN}%0$ {GREEN}from balance of player {DARKGREEN}%1" # %0 is removed balance, %1 is target player
+  # Command - Add - Claim Expiration Date
+  expiration-date-successfully-extended: "%p {GREEN}Success: {GREEN}Expiration date extended by {DARKGREEN}%0 days{GREEN}, {DARKGREEN}%1 hours{GREEN}, {DARKGREEN}%2 minutes{GREEN}." # %0 is added days, %1 is added hours, %2 is added minutes
+  expiration-date-successfully-subtracted: "%p {GREEN}Success: {GREEN}Expiration date subtracted by {DARKGREEN}%0 days{GREEN}, {DARKGREEN}%1 hours{GREEN}, {DARKGREEN}%2 minutes{GREEN}." # %0 is subtracted days, %1 is subtracted hours, %2 is subtracted minutes
+  invalid-number-format: "%p {RED} Error: Invalid number format for days, hours, or minutes."
+  # Commands - Delete - Claim
+  claim-removed: "%p {GREEN}Success: The claim in the chunk you were in has been deleted."
+  # Commands - Change - Money Data
+  nothing-has-changed: "%p {RED}Error: Nothing has changed because the value is the same"
+  value-already-set: "%p {RED}Error: The money data is already set to {DARKRED}%0{RED}." # %0 is value
+  money-data-changed: "%p {GREEN}Success: Money data changed to {DARKGREEN}%0{GREEN}." # %0 is money value
+  invalid-data: "%p {RED}Error: {DARKGREEN}%0 {RED}invalid data." # %0 is value
+  # Commands - Balance
+  player-balance: "%p {PURPLE}Reminder: {WHITE}You have {GRAY}%0{WHITE}$ in your balance." # %0 is player balance
+
+
+action-bar:
+  unclaimed-chunk: "{GRAY}This chunk is unclaimed."
+  claimed-chunk: "{PURPLE}Caution! You've entered another player's territory."
+  our-chunk: "{DARKGREEN}Welcome back! This is your territory."

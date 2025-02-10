@@ -1,0 +1,22 @@
+
+chunks_claimed:
+  'x_z':
+    created-at: DATE
+    expired-at: DATE
+    owner: UUID
+    bedrock_location:
+      world: WORLD
+      x: X
+      y: Y
+      z: Z
+    lands:
+      - 'x_z'
+      - 'x_z'
+      - 'x_z'
+      - 'x_z'
+      - 'x_z'
+    coops:
+      player-uuid:
+        joined-at: DATE
+        permissions:
+          can-break-spawners: false

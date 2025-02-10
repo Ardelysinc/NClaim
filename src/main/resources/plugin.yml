@@ -1,0 +1,34 @@
+name: NClaim
+version: '1.0'
+main: nesoi.network.NClaim.NCoreMain
+api-version: '1.19'
+author: aysihuniks
+commands:
+  nclaim:
+    aliases: nclaim
+    usage: /nclaim <help/?>
+permissions:
+  nclaim.admin:
+    default: op
+    children:
+      nclaim.reload: true
+      nclaim.add: true
+      nclaim.remove: true
+      nclaim.delete: true
+      nclaim.chunkinfo: true
+      nclaim.help: true
+    nclaim.reload:
+      default: op
+    nclaim.add:
+      default: op
+    nclaim.remove:
+      default: op
+    nclaim.delete:
+      default: op
+    nclaim.chunkinfo:
+      default: op
+    nclaim.help:
+      default: op
+
+depend: [PlaceholderAPI, NBTAPI, FancyHolograms]
+softdepend: [Vault]
