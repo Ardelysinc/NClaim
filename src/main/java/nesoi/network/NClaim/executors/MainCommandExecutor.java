@@ -74,7 +74,7 @@ public class MainCommandExecutor implements CommandExecutor, TabCompleter {
         String pluginName = descriptionFile.getName();
         String pluginVersion = descriptionFile.getVersion();
         String pluginAuthor = String.join(", ", descriptionFile.getAuthors());
-        String resourceLink = "";
+        String resourceLink = "https://www.spigotmc.org/resources/nclaim-advanced-claim-system.122527/";
         List<String> aboutMessages = Stream.of(
                 "{WHITE}This server is running {ORANGE}" + pluginName + " " + pluginVersion + " {WHITE}by {ORANGE}" + pluginAuthor,
                 "{GRAY}" + resourceLink
